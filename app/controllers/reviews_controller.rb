@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
       page_number += 1
     end
 
-    render json: { msg: total_reviews, number_of_reviews: total_reviews.length }
+    render json: { reviews: total_reviews, number_of_reviews: total_reviews.length }
   end
 
   private
